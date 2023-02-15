@@ -20,6 +20,8 @@ import SplashScreen from 'react-native-splash-screen';
 
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 
+import Icon from 'react-native-vector-icons/Ionicons';
+
 const App = () => {
   useEffect(() => {
     SplashScreen.hide(); //hides the splash screen on app load.
@@ -29,6 +31,7 @@ const App = () => {
     <SafeAreaProvider>
       <SafeAreaView>
         <Text style={styles.text}>Hiurfihfu</Text>
+        <Icon name="airplane-outline" size={24} color={'blue'} />
       </SafeAreaView>
     </SafeAreaProvider>
   );
